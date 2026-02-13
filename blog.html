@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematički kutak - Časovi matematike Novi Sad</title>
+    <meta name="description"
+        content="Korisni tekstovi i objašnjenja iz sveta matematike. Blog Časovi matematike Novi Sad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ====================================================================
+       HEADER (same structure, always-white variant for blog)
+       ==================================================================== -->
+    <header class="site-header site-header--white" id="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">Časovi matematike Novi Sad</a>
+
+            <!-- Mobile: phone icon -->
+            <a href="tel:+381643681470" class="header-phone-mobile" aria-label="Pozovite nas">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.25a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68A2 2 0 0 1 22 16.92z" />
+                </svg>
+            </a>
+
+            <!-- Hamburger (mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Desktop Nav -->
+            <nav class="header-nav" aria-label="Glavna navigacija">
+                <a href="index.html#usluge">Usluge</a>
+                <a href="index.html#o-nama">O nama</a>
+                <a href="index.html#cenovnik">Cenovnik</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="index.html#kontakt">Kontakt</a>
+                <a href="tel:+381643681470" class="btn-primary header-cta">Pozovi</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Nav Overlay -->
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobilna navigacija">
+            <a href="index.html#usluge">Usluge</a>
+            <a href="index.html#o-nama">O nama</a>
+            <a href="index.html#cenovnik">Cenovnik</a>
+            <a href="blog.html">Blog</a>
+            <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <div class="blog-page-header">
+            <h1>Matematički kutak</h1>
+            <p>Korisni tekstovi i objašnjenja iz sveta matematike</p>
+        </div>
+
+        <!-- ==================================================================
+         ARTICLE: Pitagorina teorema
+         ================================================================== -->
+        <article class="article-container">
+            <h2>Pitagorina teorema i geometrija pravouglog trougla</h2>
+
+            <p>Pitagorina teorema je jedan od najvažnijih koncepata u matematici. Ona glasi: u pravouglom trouglu, zbir
+                kvadrata kateta jednak je kvadratu hipotenuze. Matematički zapisano: a&sup2; + b&sup2; = c&sup2;, gde su
+                a i b katete, a c hipotenuza, najduža stranica pravouglog trougla, koja leži naspram pravog ugla.
+            </p>
+
+            <h3>Kako primeniti teoremu?</h3>
+
+            <p>Zamislite pravougli trougao čije su katete dužine 3 cm i 4 cm. Da bismo izračunali hipotenuzu,
+                primenjujemo formulu: 3&sup2; + 4&sup2; = 9 + 16 = 25. Koren iz 25 je 5, što znači da hipotenuza iznosi
+                5 cm. Ovo je poznati &ldquo;trougao 3-4-5&rdquo; i jedan od najčešćih primera u udžbenicima.</p>
+
+            <!-- Right triangle illustration -->
+            <div class="triangle-illustration">
+                <svg width="280" height="220" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Triangle -->
+                    <line x1="40" y1="180" x2="240" y2="180" stroke="#8B6F4E" stroke-width="2" />
+                    <line x1="240" y1="180" x2="240" y2="40" stroke="#8B6F4E" stroke-width="2" />
+                    <line x1="40" y1="180" x2="240" y2="40" stroke="#8B6F4E" stroke-width="2" />
+                    <!-- Right angle marker -->
+                    <polyline points="220,180 220,160 240,160" fill="none" stroke="#8B6F4E" stroke-width="1.5" />
+                    <!-- Labels -->
+                    <text x="140" y="205" text-anchor="middle" font-family="Inter, sans-serif" font-size="16"
+                        fill="#2C2C2C" font-weight="600">a</text>
+                    <text x="255" y="115" text-anchor="start" font-family="Inter, sans-serif" font-size="16"
+                        fill="#2C2C2C" font-weight="600">b</text>
+                    <text x="125" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="16"
+                        fill="#2C2C2C" font-weight="600">c</text>
+                </svg>
+            </div>
+
+            <h3>Specijalni pravougli trouglovi</h3>
+
+            <p>Postoje dva specijalna pravougla trougla koja se često pojavljuju u matematici. Prvi je trougao sa
+                uglovima 45-45-90 stepeni, kod koga su katete jednake dužine, a hipotenuza je jednaka kateti pomnoženoj
+                sa koren iz 2. Drugi je trougao sa uglovima 30-60-90 stepeni, kod koga je kraća kateta jednaka polovini
+                hipotenuze, a duža kateta jednaka kraćoj kateti pomnoženoj sa koren iz 3.</p>
+
+            <h3>Zašto je ovo važno?</h3>
+
+            <p>Pitagorina teorema se koristi u arhitekturi, inženjerstvu, fizici, računarstvu i mnogim drugim oblastima.
+                Za učenike, razumevanje ove teoreme je ključno za uspeh u geometriji i matematici uopšte. Ako vam treba
+                pomoć sa ovom ili bilo kojom drugom temom, slobodno nas kontaktirajte.</p>
+
+            <div class="article-cta">
+                <p><a href="index.html#kontakt">Zakažite čas</a></p>
+            </div>
+        </article>
+
+        <a href="index.html" class="back-link">&larr; Nazad na početnu</a>
+
+        <!-- To add a new article, duplicate the <article class="article-container"> block above -->
+    </main>
+
+    <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-quote">&ldquo;Vaspitavajte decu, vaspitavajte i sebe.&rdquo; - Sveti Sava</p>
+            <hr>
+            <p class="footer-copy">&copy; 2026 Časovi matematike Novi Sad. Sva prava zadržana.</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/casovimatematike.ns" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
