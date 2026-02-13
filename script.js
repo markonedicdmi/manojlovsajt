@@ -1,16 +1,14 @@
-/* ==========================================================================
-   SCRIPT.JS — Shared scripts for Casovi Matematike Novi Sad
-   ========================================================================== */
+/* skripta */
 
 (function () {
   'use strict';
 
-  // ── Header scroll behavior ──────────────────────────────────────────
+  // heder skrol
   const header = document.getElementById('site-header');
   const isIndex = header && header.classList.contains('site-header--transparent');
 
   function handleScroll() {
-    if (!isIndex) return; // Blog page header is always white
+    if (!isIndex) return;
     if (window.scrollY > 50) {
       header.classList.add('site-header--scrolled');
     } else {
@@ -18,11 +16,11 @@
     }
   }
 
-  // Run on load and scroll
+  // pokreni na load i scroll
   handleScroll();
   window.addEventListener('scroll', handleScroll, { passive: true });
 
-  // ── Hamburger menu toggle ──────────────────────────────────────────
+  // hamburger meni
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobile-nav');
 
@@ -31,11 +29,11 @@
       const isOpen = mobileNav.classList.toggle('open');
       hamburger.classList.toggle('active');
       hamburger.setAttribute('aria-expanded', isOpen);
-      // Prevent body scroll when menu is open
+      // blokiraj skrol kad je meni otvoren
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    // Close mobile nav when a link is clicked
+    // zatvori meni na klik linka
     const mobileLinks = mobileNav.querySelectorAll('a');
     mobileLinks.forEach(function (link) {
       link.addEventListener('click', function () {
@@ -47,13 +45,13 @@
     });
   }
 
-  // ── Lightbox for academic proof ────────────────────────────────────
+  // lightbox za prosek slike
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightbox-img');
   var lightboxClose = document.getElementById('lightbox-close');
 
   if (lightbox) {
-    // Open lightbox when clicking a GPA badge with data-proof
+    // otvori lightbox na klik badge-a
     var badges = document.querySelectorAll('.gpa-badge[data-proof]');
     badges.forEach(function (badge) {
       badge.addEventListener('click', function () {

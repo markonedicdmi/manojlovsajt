@@ -1,11 +1,9 @@
-/* ==========================================================================
-   STYLE.CSS — Shared styles for Casovi Matematike Novi Sad
-   ========================================================================== */
+/* stilovi za sajt */
 
-/* ---------- Google Fonts ---------- */
+/* google fontovi */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
 
-/* ---------- Design Tokens ---------- */
+/* boje i varijable */
 :root {
     --bg-primary: #F7F5F0;
     --bg-alt: #EDEBE6;
@@ -23,7 +21,7 @@
     --container: 1200px;
 }
 
-/* ---------- Reset & Base ---------- */
+/* reset */
 *,
 *::before,
 *::after {
@@ -62,7 +60,7 @@ ol {
     list-style: none;
 }
 
-/* ---------- Utility ---------- */
+/* utility */
 .container {
     width: 100%;
     max-width: var(--container);
@@ -80,7 +78,7 @@ ol {
     margin-bottom: 48px;
 }
 
-/* ---------- Buttons ---------- */
+/* dugmici */
 .btn-primary {
     display: inline-block;
     font-family: var(--font-body);
@@ -141,9 +139,7 @@ ol {
     transition: fill 0.3s ease, stroke 0.3s ease;
 }
 
-/* ==========================================================================
-   HEADER
-   ========================================================================== */
+/* heder */
 .site-header {
     position: fixed;
     top: 0;
@@ -153,12 +149,12 @@ ol {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Transparent on index hero */
+/* transparentan na index */
 .site-header--transparent {
     background-color: transparent;
 }
 
-/* Always white on blog */
+/* beli na blogu */
 .site-header--white,
 .site-header--scrolled {
     background-color: var(--white);
@@ -175,7 +171,7 @@ ol {
     padding: 0 20px;
 }
 
-/* Brand */
+/* brend */
 .header-brand {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -191,7 +187,7 @@ ol {
     color: var(--text-primary);
 }
 
-/* Desktop Nav */
+/* nav */
 .header-nav {
     display: none;
     align-items: center;
@@ -221,7 +217,7 @@ ol {
     color: var(--accent);
 }
 
-/* Desktop CTA in header */
+/* pozovi dugme */
 .header-cta {
     display: none;
     font-size: 0.85rem;
@@ -229,7 +225,7 @@ ol {
     color: var(--white) !important;
 }
 
-/* Mobile phone icon */
+/* telefon mobilni */
 .header-phone-mobile {
     display: flex;
     align-items: center;
@@ -250,7 +246,7 @@ ol {
     stroke: var(--accent);
 }
 
-/* Hamburger */
+/* hamburger */
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -279,7 +275,7 @@ ol {
     background-color: var(--text-primary);
 }
 
-/* Hamburger active state (X) */
+/* hamburger X */
 .hamburger.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
     background-color: var(--white);
@@ -294,7 +290,7 @@ ol {
     background-color: var(--white);
 }
 
-/* Mobile Nav Overlay */
+/* mobilni meni */
 .mobile-nav {
     position: fixed;
     inset: 0;
@@ -328,7 +324,7 @@ ol {
     color: var(--text-secondary);
 }
 
-/* Desktop breakpoint */
+/* desktop */
 @media (min-width: 768px) {
     .hamburger {
         display: none;
@@ -351,9 +347,7 @@ ol {
     }
 }
 
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
+/* hero */
 .hero {
     position: relative;
     width: 100%;
@@ -368,7 +362,7 @@ ol {
     overflow: hidden;
 }
 
-/* Background video */
+/* video */
 .hero-video {
     position: absolute;
     inset: 0;
@@ -423,7 +417,7 @@ ol {
     font-size: 1.05rem;
 }
 
-/* Scroll-down chevron */
+/* strelica dole */
 .scroll-chevron {
     position: absolute;
     bottom: 32px;
@@ -460,9 +454,7 @@ ol {
     }
 }
 
-/* ==========================================================================
-   SECTIONS — shared patterns
-   ========================================================================== */
+/* sekcije */
 .section {
     padding: 48px 0;
 }
@@ -487,9 +479,7 @@ ol {
     }
 }
 
-/* ==========================================================================
-   USLUGE (Services) — Card Grid
-   ========================================================================== */
+/* usluge */
 .services-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -532,9 +522,7 @@ ol {
     line-height: 1.5;
 }
 
-/* ==========================================================================
-   O NAMA (About Us)
-   ========================================================================== */
+/* o nama */
 .about-philosophy {
     max-width: 700px;
     margin: 0 auto 64px;
@@ -562,7 +550,7 @@ ol {
     }
 }
 
-/* Tutor cards */
+/* tutor kartice */
 .tutor-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -618,7 +606,7 @@ ol {
     margin-bottom: 8px;
 }
 
-/* GPA Badge */
+/* prosek badge */
 .gpa-badge {
     display: inline-block;
     background-color: var(--accent);
@@ -667,7 +655,7 @@ ol {
 }
 
 
-/* Testimonials */
+/* preporuke */
 .testimonials {
     max-width: 900px;
     margin: 0 auto;
@@ -731,9 +719,7 @@ ol {
     color: var(--text-primary);
 }
 
-/* ==========================================================================
-   CENOVNIK (Pricing)
-   ========================================================================== */
+/* cenovnik */
 .pricing-table {
     max-width: 500px;
     margin: 0 auto;
@@ -845,9 +831,7 @@ ol {
     color: var(--accent-hover);
 }
 
-/* ==========================================================================
-   KONTAKT (Contact)
-   ========================================================================== */
+/* kontak */
 .contact-inner {
     text-align: center;
     max-width: 600px;
@@ -934,9 +918,7 @@ ol {
     stroke: #6B6B6B;
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
+/* footer */
 .site-footer {
     background-color: var(--text-primary);
     padding: 48px 0 32px;
@@ -988,9 +970,7 @@ ol {
     height: 20px;
 }
 
-/* ==========================================================================
-   BLOG PAGE
-   ========================================================================== */
+/* blog stranica */
 .blog-page-header {
     padding-top: 100px;
     padding-bottom: 16px;
@@ -1010,7 +990,7 @@ ol {
     color: #6B6B6B;
 }
 
-/* Article */
+/* clanak */
 .article-container {
     max-width: 720px;
     margin: 0 auto;
@@ -1041,7 +1021,7 @@ ol {
     margin-bottom: 20px;
 }
 
-/* SVG illustration for blog */
+/* svg ilustracija */
 .triangle-illustration {
     display: flex;
     justify-content: center;
@@ -1085,16 +1065,12 @@ ol {
     color: var(--accent-hover);
 }
 
-/* ==========================================================================
-   SECTION LETTER-SPACING OVERRIDE — Cenovnik
-   ========================================================================== */
+/* cenovnik naslov */
 .section-title--wide {
     letter-spacing: 0.15em;
 }
 
-/* ==========================================================================
-   LIGHTBOX / MODAL
-   ========================================================================== */
+/* lightbox */
 .lightbox {
     position: fixed;
     inset: 0;
