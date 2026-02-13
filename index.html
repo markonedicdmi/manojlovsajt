@@ -163,7 +163,8 @@
                             <img src="manojlo.jpg" alt="Manojlo Stanarević" width="200" height="200">
                         </div>
                         <h4>Manojlo Stanarević</h4>
-                        <span class="gpa-badge">Prosek: 9.0</span>
+                        <span class="gpa-badge" data-proof="manojlo_uspeh.jpg" role="button" tabindex="0"
+                            aria-label="Prikaži akademske rezultate">Prosek: 9.0</span>
                         <p class="tutor-title">Student treće godine PMF-a, smer Master profesor matematike</p>
                         <div class="tutor-bio">
                             <p>Manojlo je student treće godine Prirodno-matematičkog fakulteta u Novom Sadu. Tokom
@@ -179,8 +180,6 @@
                             <p><strong>Format:</strong> Uživo i online</p>
                             <p><strong>Metod:</strong> Individualni pristup prilagođen svakom učeniku</p>
                         </div>
-                        <img class="academic-proof" src="manojlo_uspeh.jpg"
-                            alt="Akademski rezultati Manojla Stanarević">
                     </div>
 
                     <!-- Tutor 2: Tijana -->
@@ -189,8 +188,9 @@
                             <img src="tijana.jpg" alt="Tijana Štrbac" width="200" height="200">
                         </div>
                         <h4>Tijana Štrbac</h4>
-                        <span class="gpa-badge">Prosek: 9.7</span>
-                        <p class="tutor-title">Studentkinja treće godine PMF-a, višestruko nagrađivana takmičarka</p>
+                        <span class="gpa-badge" data-proof="tijana_uspeh.jpg" role="button" tabindex="0"
+                            aria-label="Prikaži akademske rezultate">Prosek: 9.7</span>
+                        <p class="tutor-title">Studentkinja treće godine PMF-a, smer Teorijska Matematika</p>
                         <div class="tutor-bio">
                             <p>Tijana je bivša višestruko nagrađivana takmičarka iz matematike i fizike, sa brojnim
                                 plasmanima i medaljama na najvišim nivoima takmičenja tokom osnovne i srednje škole.
@@ -210,7 +210,6 @@
                             <p><strong>Format:</strong> Uživo</p>
                             <p><strong>Metod:</strong> Individualni pristup prilagođen svakom učeniku</p>
                         </div>
-                        <img class="academic-proof" src="tijana_uspeh.jpg" alt="Akademski rezultati Tijane Štrbac">
                     </div>
 
                 </div>
@@ -228,21 +227,21 @@
                         </div>
 
                         <div class="testimonial-card">
+                            <blockquote>
+                                Tijana me je za samo jedan dan pripremila za ispit iz analitičke geometrije, iako sam
+                                pre toga imao gotovo nula znanja i bio uveren da ću pasti. Nije mi samo rešavala
+                                zadatke, već mi je jasno objasnila pojmove i pomogla mi da ih zaista razumem. Prvi put
+                                sam imao osećaj sigurnosti u sopstveno znanje - i ne samo da sam položio, već sam dobio
+                                i višu ocenu nego što sam očekivao.
+                            </blockquote>
+                            <cite>Marko N.</cite>
+                        </div>
+
+                        <div class="testimonial-card">
                             <blockquote>Manojla znam još od srednje škole. Veoma je vredan i posvećen profesor i
                                 student. Gradivo objašnjava strpljivo i na jasan način. Učenicima pristupa drugarski i
                                 podstiče ih da samostalno pronalaze rešenja.</blockquote>
                             <cite>Katarina</cite>
-                        </div>
-
-                        <div class="testimonial-card">
-                            <blockquote>Tijana me je pripremila za ispit iz analitičke geometrije za samo jedan dan. Pre
-                                toga sam praktično imao nula znanja: bio sam uveren da ću pasti predmet i ozbiljno sam
-                                se mučio sa gradivom. Ono što je napravilo razliku nije bilo samo to što mi je objasnila
-                                zadatke, već način na koji mi je razjasnila koncepte i pomogla mi da ih zaista razumem.
-                                Prvi put sam imao osećaj sigurnosti u sopstveno znanje. Iz amfiteatra sam izašao gotovo
-                                u neverici - ne samo da sam položio, već sam dobio i višu ocenu nego što sam se nadao.
-                            </blockquote>
-                            <cite>Marko N.</cite>
                         </div>
 
                     </div>
@@ -413,6 +412,7 @@
             <p class="footer-quote">&ldquo;Vaspitavajte decu, vaspitavajte i sebe.&rdquo; - Sveti Sava</p>
             <hr>
             <p class="footer-copy">&copy; 2026 Časovi matematike Novi Sad. Sva prava zadržana.</p>
+            <p class="footer-credit">Sajt dizajnirao: Marko Nedić</p>
             <div class="footer-social">
                 <a href="https://www.instagram.com/casovimatematike.ns" target="_blank" rel="noopener noreferrer"
                     aria-label="Instagram">
@@ -426,6 +426,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Zatvori">&times;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Akademski rezultati">
+    </div>
 
     <script src="script.js"></script>
 </body>
